@@ -49,11 +49,11 @@ Usaremos BBH Bogle para la fuente del logo y otras frases principales, como el e
 
 ### BBH Bogle:
 
-![bbh-bogle-muestra](../assets/images/bbh-bogle-muestra.png)
+![bbh-bogle-muestra](assets/images/bbh-bogle-muestra.png)
 
 ### Lato:
 
-![lato-muestra](../assets/images/lato-muestra.png)
+![lato-muestra](assets/images/lato-muestra.png)
 
 ---
 
@@ -66,7 +66,7 @@ Consideramos que estos colores son apropiados para mostrar nuestro objetivo de *
 
 La paleta la realizamos con [COLOURLovers](https://www.colourlovers.com/palettes/add).
 
-![paleta-colores]("../images/paleta-colores.jpeg")
+![paleta-colores](assets/images/paleta-colores.jpeg)
 
 ---
 
@@ -74,12 +74,12 @@ La paleta la realizamos con [COLOURLovers](https://www.colourlovers.com/palettes
 
 Para este apartado, nuestro profesor Josep Magraner nos dio unas cuantas ideas, y una que nos gustó mucho fue la imagen del Lince Ibérico ([_Lynx Pardinus_](https://es.wikipedia.org/wiki/Lynx_pardinus)) como representante. Así, de manera minimalista, quedó nuestro logo:
 
-![cla-logo-con-letras](../assets/images/cla-logo-con-letras.svg)
-![osc-logo-con-letras](../assets/images/osc-logo-con-letras.svg)
+![cla-logo-con-letras](assets/images/cla-logo-con-letras.svg)
+![osc-logo-con-letras](assets/images/osc-logo-con-letras.svg)
 
-![logo-claro]("../images/logo-claro.png")
-![logo-oscuro]("../images/logo-oscuro.png")
+![logo-claro](assets/images/logo-claro.png)
+![logo-oscuro](assets/images/logo-oscuro.png)
 
 Otro logo que estuvimos debatiendo fue el siguiente, pero lo descartamos porque los anteriores eran más fáciles de manejar y más simples. Aún así, nos gustó, así que lo añadimos a la memoria:
 
-![logo-fondo-osc](../assets/images/logo-fondo-osc.png)
+![logo-fondo-osc](assets/images/logo-fondo-osc.png)

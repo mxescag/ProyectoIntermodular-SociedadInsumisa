@@ -3,6 +3,7 @@ site_url = "https://www.example.com/"
 site_name = "Proyecto Intermodular - Sociedad Insumisa"
 site_description = "Página web de documentación del proyecto para página web de campaña del partido político ficticio Sociedad Insumisa"
 site_author = "Max Escrivá, Silvia Moreno, Isabel Climent"
+docs_dir = "docs"
 
 # copyright = "Copyright &copy; 2026 Your name"
 
