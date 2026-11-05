@@ -12,6 +12,8 @@ repo_name = "mxescag/ProyectoIntermodular-SociedadInsumisa"
 
 nav = [
   { "Página de inicio" = "index.md" },
+  { "Investigación" = "investigacion.md" },
+  { "Decisiones de branding" = "branding.md" },
 ]
 
 # extra_css = ["stylesheets/extra.css"]
