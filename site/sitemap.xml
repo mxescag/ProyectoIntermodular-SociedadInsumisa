@@ -10,6 +10,9 @@
         <loc>https://www.example.com/investigacion/</loc>
       </url>
       <url>
+        <loc>https://www.example.com/pagina-web-final/</loc>
+      </url>
+      <url>
         <loc>https://www.example.com/prototipo-web/</loc>
       </url>
 </urlset>
