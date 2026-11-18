@@ -15,6 +15,7 @@ nav = [
   { "Página de inicio" = "index.md" },
   { "Investigación" = "investigacion.md" },
   { "Decisiones de branding" = "branding.md" },
+  { "Prototipo Web" = "prototipo-web.md" },
 ]
 
 # extra_css = ["stylesheets/extra.css"]
