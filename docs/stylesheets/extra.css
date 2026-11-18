@@ -1,0 +1,16 @@
+:root > * {
+    --md-primary-fg-color: #0A284F;
+    --md-primary-fg-color--light: #E3CD9C;
+
+    --md-default-bg-color: #0C152A;
+    --md-default-fg-color: #F9F5EB;
+    --md-primary-fg-color: #0A284F; /* Fondo del encabezado y la barra de pestañas */
+    --md-primary-bg-color: #E3CD9C; /* Texto e iconos sobre ese fondo */
+    --md-accent-fg-color: #E3CD9C;  /* Elementos activos y resaltados */
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    color: #E3CD9C;
+}
