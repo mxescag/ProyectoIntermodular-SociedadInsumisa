@@ -94,12 +94,12 @@ Para otro material promocional de campaña, también usaremos una versión simpl
 
 > [!NOTE] Generamos las personas representantes de nuestro partido mediante IA.
 
-Para diferenciarnos del resto en cuanto a máximos representantes del partido, decidimos que la secretaria general de nuestro partido fuese una mujer. Su nombre es #TODO
+Para diferenciarnos del resto en cuanto a máximos representantes del partido, decidimos que la secretaria general de nuestro partido fuese una mujer. Su nombre es **Beatriz Alarcón**.
 
 ![retrato-perfil-1](assets/images/Fotos/retrato-perfil-1.png)
 ![retrato-completo-1](assets/images/Fotos/retrato-perfil-completo-1.png)
 
-El subsecretario será #TODO:
+El subsecretario será **Salvador Monfort**:
 
 ![retrato-subsecretario](assets/images/Fotos/subsecretario.png)
 
