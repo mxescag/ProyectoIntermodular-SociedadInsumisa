@@ -50,7 +50,6 @@
                     <button type="button" aria-label="Mostrar imagen 2"></button>
                     <button type="button" aria-label="Mostrar imagen 3"></button>
                     <button type="button" aria-label="Mostrar imagen 4"></button>
-                    <button type="button" aria-label="Mostrar imagen 5"></button>
                 </div>
             </div>
         </section>
@@ -176,7 +175,6 @@
     <script>
         const heroImages = [
             { src: "../images/Fotos/mitin.png", alt: "Mitin de Sociedad Insumisa" },
-            { src: "../images/Fotos/eslogan-quietos.png", alt: "Cartel de campaña «Quietos»" },
             { src: "../images/Fotos/rueda-prensa.png", alt: "Rueda de prensa de Sociedad Insumisa" },
             { src: "../images/Fotos/sede-nacional.png", alt: "Sede nacional de Sociedad Insumisa" },
             { src: "../images/Fotos/secretaria-y-portavoz.png", alt: "Secretaría y portavoz de Sociedad Insumisa" }
@@ -196,6 +194,8 @@
             currentHeroImage = (index + heroImages.length) % heroImages.length;
             heroImage.src = heroImages[currentHeroImage].src;
             heroImage.alt = heroImages[currentHeroImage].alt;
+            heroImage.classList.remove("slide-in");
+            requestAnimationFrame(() => heroImage.classList.add("slide-in"));
             heroDots.forEach((dot, position) => {
                 const isCurrent = position === currentHeroImage;
                 dot.classList.toggle("active", isCurrent);
@@ -228,8 +228,8 @@
             });
         }
 
-        document.querySelector(".previous").addEventListener("click", () => showSlide(currentSlide - 1));
-        document.querySelector(".next").addEventListener("click", () => showSlide(currentSlide + 1));
+        document.querySelector(".carousel-button.previous").addEventListener("click", () => showSlide(currentSlide - 1));
+        document.querySelector(".carousel-button.next").addEventListener("click", () => showSlide(currentSlide + 1));
         dots.forEach((dot, index) => dot.addEventListener("click", () => showSlide(index)));
 
         window.setInterval(() => showSlide(currentSlide + 1), 5000);

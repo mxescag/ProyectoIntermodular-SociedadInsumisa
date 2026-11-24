@@ -23,8 +23,8 @@ body {
 body.participation-body,
 body.contact-body {
     background:
-        radial-gradient(ellipse at 12% 14%, rgba(227, 205, 156, .48), transparent 34%),
-        radial-gradient(ellipse at 88% 72%, rgba(67, 117, 163, .18), transparent 36%),
+        radial-gradient(ellipse at 12% 14%, rgba(227, 205, 156, .58), transparent 34%),
+        radial-gradient(ellipse at 88% 72%, rgba(67, 117, 163, .48), transparent 36%),
         linear-gradient(125deg, #fffdf7, var(--paper) 52%, #e6edf4);
 }
 
@@ -153,6 +153,23 @@ a {
     aspect-ratio: 5 / 3;
     border: 1px solid rgba(227, 205, 156, .35);
     object-fit: cover;
+}
+
+.hero-art.slide-in,
+.slide:not([hidden]) {
+    animation: carousel-slide-in .42s ease-out both;
+}
+
+@keyframes carousel-slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .hero-carousel-button,
@@ -1115,5 +1132,10 @@ a {
 @media (prefers-reduced-motion: reduce) {
     :root {
         scroll-behavior: auto;
+    }
+
+    .hero-art.slide-in,
+    .slide:not([hidden]) {
+        animation: none;
     }
 }
