@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0A284F">
-    <link rel="icon" href="../images/logo-sin-fondo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-    <script src="menu.js" defer></script>
-    <title>Agenda y noticias | Sociedad Insumisa</title>
-</head>
-<body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Navegación principal">
-            <a class="brand" href="index.html"><img src="../images/logo-sin-fondo.png" alt="Sociedad Insumisa"></a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
-                <span></span><span></span><span></span>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="programa.html">Programa electoral</a>
-                <a href="partido.html">El partido</a>
-                <a href="candidatura.html">Candidatos y equipo</a>
-                <a href="agenda.html" aria-current="page">Actualidad</a>
-                <a href="participa.html">Participa</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#0A284F">
+        <link rel="icon" href="../images/logo-sin-fondo.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+        <script src="menu.js" defer></script>
+        <title>Agenda y noticias | Sociedad Insumisa</title>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar" aria-label="Navegación principal">
+                <a class="brand" href="index.html"><img
+                        src="../images/logo-sin-fondo.png"
+                        alt="Sociedad Insumisa"></a>
+                <button class="menu-toggle" type="button" aria-expanded="false"
+                    aria-controls="nav-links" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="programa.html">Programa electoral</a>
+                    <a href="partido.html">El partido</a>
+                    <a href="candidatura.html">Candidatos y equipo</a>
+                    <a href="agenda.html" aria-current="page">Actualidad</a>
+                    <a href="participa.html">Participa</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </header>
 
-    <main class="detail-page">
-        <p class="eyebrow">Sociedad Insumisa · Actualidad</p>
-        <h1>Agenda y noticias</h1>
-        <p class="page-lead">Consulta las novedades y las ideas del partido. Las noticias de esta página son contenidos ficticios basados en la documentación del proyecto.</p>
+        <main class="detail-page">
+            <p class="eyebrow">Sociedad Insumisa · Actualidad</p>
+            <h1>Agenda y noticias</h1>
+            <p class="page-lead">Ponte al día de nuestro equipo con las noticias
+                y agenda más recientes.</p>
 
-        <section class="news-list">
-            <a class="news-card" href="noticia-economia.html">
-                <img src="../images/Fotos/despacho.png" alt="">
-                <div><p class="eyebrow">Economía</p><h2>Menos trabas, más oportunidades</h2><p>Una propuesta para simplificar la administración y favorecer la iniciativa individual.</p><span>Leer noticia →</span></div>
-            </a>
-            <a class="news-card" href="noticia-libertades.html">
-                <img src="../images/Fotos/debate-electoral.png" alt="">
-                <div><p class="eyebrow">Libertades</p><h2>Libertad para decidir</h2><p>La autonomía personal y las libertades civiles, en el centro del proyecto.</p><span>Leer noticia →</span></div>
-            </a>
-            <a class="news-card" href="noticia-instituciones.html">
-                <img src="../images/Fotos/congreso.png" alt="">
-                <div><p class="eyebrow">Instituciones</p><h2>Igualdad ante la ley</h2><p>Instituciones independientes, separación de poderes y reglas iguales.</p><span>Leer noticia →</span></div>
-            </a>
-        </section>
+            <section class="news-list">
+                <a class="news-card" href="noticia-sede.html">
+                    <img src="../images/Fotos/despacho.png" alt>
+                    <div><p class="eyebrow">Sede nacional del
+                            partido</p><h2>Nueva sede en el centro de
+                            Valencia</h2><p>Sociedad Insumisa abre un nuevo
+                            espacio para atender a la ciudadanía y organizar
+                            encuentros.</p><span>Leer noticia →</span></div>
+                </a>
+                <a class="news-card" href="noticia-debate.html">
+                    <img src="../images/Fotos/debate-electoral.png" alt>
+                    <div><p class="eyebrow">Debate electoral</p><h2>Sociedad
+                            Insumisa en el debate previo a las
+                            generales</h2><p>Beatriz
+                            Alarcón expuso nuestras propuestas sobre libertad,
+                            economía e instituciones.</p><span>Leer noticia
+                            →</span></div>
+                </a>
+            </section>
 
-        <section class="agenda-page-calendar">
-            <div>
-                <p class="eyebrow">Próximos encuentros</p>
-                <h2>Agenda de actos</h2>
-                <p>Todavía no hay actos anunciados. Cuando se definan fechas y lugares, se publicarán aquí.</p>
-            </div>
-            <div class="calendar">
-                <h3 id="calendar-month">Calendario</h3>
-                <div class="calendar-grid" aria-label="Calendario">
-                    <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+            <section class="agenda-page-calendar">
+                <div>
+                    <p class="eyebrow">Próximos encuentros</p>
+                    <h2>Agenda de actos</h2>
+                    <p>Todavía no hay actos anunciados. Cuando se definan fechas
+                        y lugares, se publicarán aquí.</p>
+                </div>
+                <div class="calendar">
+                    <h3 id="calendar-month">Calendario</h3>
+                    <div class="calendar-grid" aria-label="Calendario">
+                        <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-main">
+                <div class="footer-brand-block">
+                    <a class="footer-brand" href="index.html">
+                        <img src="../images/logo-sin-fondo.png" alt>
+                        <span>Sociedad Insumisa</span>
+                    </a>
+                    <p class="footer-slogan">Di sí al cambio<br>Libres por
+                        decisión</p>
+                </div>
+                <nav class="footer-nav"
+                    aria-label="Navegación principal del pie">
+                    <h2>Explora</h2>
+                    <a href="index.html">Inicio</a>
+                    <a href="agenda.html">Actualidad</a>
+                    <a href="agenda.html">Agenda</a>
+                </nav>
+                <nav class="footer-nav" aria-label="Información del partido">
+                    <h2>El proyecto</h2>
+                    <a href="partido.html">Quiénes somos</a>
+                    <a href="programa.html">Programa electoral</a>
+                    <a href="candidatura.html">Candidatura y equipo</a>
+                    <a href="participa.html">Participa</a>
+                </nav>
+                <div class="footer-contact">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes una pregunta o propuesta?</p>
+                    <a href="contacto.html">Escríbenos <span
+                            aria-hidden="true">→</span></a>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-main">
-            <div class="footer-brand-block">
-                <a class="footer-brand" href="index.html">
-                    <img src="../images/logo-sin-fondo.png" alt="">
-                    <span>Sociedad Insumisa</span>
-                </a>
-                <p class="footer-slogan">Di sí al cambio<br>Libres por decisión</p>
+            <div class="footer-bottom">
+                <p>© Sociedad Insumisa. Todos los derechos reservados.</p>
+                <a href="index.html#inicio">Volver al inicio ↑</a>
             </div>
-            <nav class="footer-nav" aria-label="Navegación principal del pie">
-                <h2>Explora</h2>
-                <a href="index.html">Inicio</a>
-                <a href="agenda.html">Actualidad</a>
-                <a href="agenda.html">Agenda</a>
-            </nav>
-            <nav class="footer-nav" aria-label="Información del partido">
-                <h2>El proyecto</h2>
-                <a href="partido.html">Quiénes somos</a>
-                <a href="programa.html">Programa electoral</a>
-                <a href="candidatura.html">Candidatura y equipo</a>
-                <a href="participa.html">Participa</a>
-            </nav>
-            <div class="footer-contact">
-                <h2>Contacto</h2>
-                <p>¿Tienes una pregunta o propuesta?</p>
-                <a href="contacto.html">Escríbenos <span aria-hidden="true">→</span></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© Sociedad Insumisa. Todos los derechos reservados.</p>
-            <a href="index.html#inicio">Volver al inicio ↑</a>
-        </div>
-    </footer>
-    <script>
+        </footer>
+        <script>
         const calendarGrid = document.querySelector(".calendar-grid");
         const today = new Date();
         const year = today.getFullYear();
@@ -113,5 +126,5 @@
             calendarGrid.append(cell);
         }
     </script>
-</body>
+    </body>
 </html>
