@@ -2,16 +2,17 @@
 
 ## Página de inicio
 
-\#TODO
+![Inicio en PC](assets/images/inicio.png)
+![Inicio responsive](assets/images/inicio-responsive.png)
 
 ## Nuestro partido
 
-\#TODO
+![](assets/images/candidatura-responsive.png)
 
 ## Programa electoral
 
-\#TODO
+![](assets/images/programa-elec-responsive.png)
 
-## Contacto y formulario
+## Agenda y noticias
 
-\#TODO
+![](assets/images/agenda-responsive.png)
