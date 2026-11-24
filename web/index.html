@@ -40,7 +40,19 @@
                     <a class="hero-link" href="participa.html">Participa</a>
                 </div>
             </div>
-            <img class="hero-art" src="../images/Fotos/mitin.png" alt="Mitin de Sociedad Insumisa">
+            <div class="hero-carousel" role="region" aria-label="Carrusel de imágenes de Sociedad Insumisa">
+                <img class="hero-art" src="../images/Fotos/mitin.png" alt="Mitin de Sociedad Insumisa">
+                <button class="hero-carousel-button previous" type="button" aria-label="Imagen anterior">‹</button>
+                <button class="hero-carousel-button pause" type="button" aria-label="Pausar carrusel">Ⅱ</button>
+                <button class="hero-carousel-button next" type="button" aria-label="Imagen siguiente">›</button>
+                <div class="hero-carousel-dots" role="group" aria-label="Elegir imagen">
+                    <button class="active" type="button" aria-label="Mostrar imagen 1" aria-current="true"></button>
+                    <button type="button" aria-label="Mostrar imagen 2"></button>
+                    <button type="button" aria-label="Mostrar imagen 3"></button>
+                    <button type="button" aria-label="Mostrar imagen 4"></button>
+                    <button type="button" aria-label="Mostrar imagen 5"></button>
+                </div>
+            </div>
         </section>
 
         <section class="section team" id="equipo">
@@ -66,7 +78,7 @@
         <section class="carousel" aria-label="Noticias del partido">
             <div class="slides">
                 <article class="slide active">
-                    <img class="slide-image" src="images/noticia-economia.svg" alt="Ilustración de edificios y una línea ascendente">
+                    <img class="slide-image" src="../images/Fotos/despacho.png" alt="Despacho de Sociedad Insumisa">
                     <div class="slide-content">
                         <p>Noticia · Economía</p>
                         <h1>Menos trabas,<br>más oportunidades</h1>
@@ -75,7 +87,7 @@
                     </div>
                 </article>
                 <article class="slide" hidden>
-                    <img class="slide-image" src="images/noticia-libertades.svg" alt="Ilustración de una puerta abierta hacia la luz">
+                    <img class="slide-image" src="../images/Fotos/debate-electoral.png" alt="Debate electoral sobre las propuestas del partido">
                     <div class="slide-content">
                         <p>Noticia · Libertades</p>
                         <h1>Libertad para decidir</h1>
@@ -127,12 +139,83 @@
         </section>
     </main>
 
-    <footer>
-        <img src="../images/cla-logo-con-letras.svg" alt="Sociedad Insumisa">
-        <span>Di sí al cambio · Libres por decisión · <a href="contacto.html">Contacto</a></span>
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand-block">
+                <a class="footer-brand" href="index.html">
+                    <img src="../images/logo-sin-fondo.png" alt="">
+                    <span>Sociedad Insumisa</span>
+                </a>
+                <p class="footer-slogan">Di sí al cambio<br>Libres por decisión</p>
+            </div>
+            <nav class="footer-nav" aria-label="Navegación principal del pie">
+                <h2>Explora</h2>
+                <a href="index.html">Inicio</a>
+                <a href="agenda.html">Actualidad</a>
+                <a href="agenda.html">Agenda</a>
+            </nav>
+            <nav class="footer-nav" aria-label="Información del partido">
+                <h2>El proyecto</h2>
+                <a href="partido.html">Quiénes somos</a>
+                <a href="programa.html">Programa electoral</a>
+                <a href="candidatura.html">Candidatura y equipo</a>
+                <a href="participa.html">Participa</a>
+            </nav>
+            <div class="footer-contact">
+                <h2>Contacto</h2>
+                <p>¿Tienes una pregunta o propuesta?</p>
+                <a href="contacto.html">Escríbenos <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Sociedad Insumisa. Todos los derechos reservados.</p>
+            <a href="index.html#inicio">Volver al inicio ↑</a>
+        </div>
     </footer>
 
     <script>
+        const heroImages = [
+            { src: "../images/Fotos/mitin.png", alt: "Mitin de Sociedad Insumisa" },
+            { src: "../images/Fotos/eslogan-quietos.png", alt: "Cartel de campaña «Quietos»" },
+            { src: "../images/Fotos/rueda-prensa.png", alt: "Rueda de prensa de Sociedad Insumisa" },
+            { src: "../images/Fotos/sede-nacional.png", alt: "Sede nacional de Sociedad Insumisa" },
+            { src: "../images/Fotos/secretaria-y-portavoz.png", alt: "Secretaría y portavoz de Sociedad Insumisa" }
+        ];
+        const heroImage = document.querySelector(".hero-art");
+        const heroDots = [...document.querySelectorAll(".hero-carousel-dots button")];
+        const pauseHeroButton = document.querySelector(".hero-carousel-button.pause");
+        let currentHeroImage = 0;
+        let heroCarouselPaused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        if (heroCarouselPaused) {
+            pauseHeroButton.setAttribute("aria-label", "Reanudar carrusel");
+            pauseHeroButton.textContent = "▶";
+        }
+
+        function showHeroImage(index) {
+            currentHeroImage = (index + heroImages.length) % heroImages.length;
+            heroImage.src = heroImages[currentHeroImage].src;
+            heroImage.alt = heroImages[currentHeroImage].alt;
+            heroDots.forEach((dot, position) => {
+                const isCurrent = position === currentHeroImage;
+                dot.classList.toggle("active", isCurrent);
+                if (isCurrent) dot.setAttribute("aria-current", "true");
+                else dot.removeAttribute("aria-current");
+            });
+        }
+
+        document.querySelector(".hero-carousel-button.previous").addEventListener("click", () => showHeroImage(currentHeroImage - 1));
+        document.querySelector(".hero-carousel-button.next").addEventListener("click", () => showHeroImage(currentHeroImage + 1));
+        heroDots.forEach((dot, index) => dot.addEventListener("click", () => showHeroImage(index)));
+        pauseHeroButton.addEventListener("click", () => {
+            heroCarouselPaused = !heroCarouselPaused;
+            pauseHeroButton.setAttribute("aria-label", heroCarouselPaused ? "Reanudar carrusel" : "Pausar carrusel");
+            pauseHeroButton.textContent = heroCarouselPaused ? "▶" : "Ⅱ";
+        });
+        window.setInterval(() => {
+            if (!heroCarouselPaused) showHeroImage(currentHeroImage + 1);
+        }, 6000);
+
         const slides = [...document.querySelectorAll(".slide")];
         const dots = [...document.querySelectorAll(".carousel-dots button")];
         let currentSlide = 0;
