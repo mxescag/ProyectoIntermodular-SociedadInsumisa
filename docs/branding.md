@@ -74,12 +74,35 @@ La paleta la realizamos con [COLOURLovers](https://www.colourlovers.com/palettes
 
 Para este apartado, nuestro profesor Josep Magraner nos dio unas cuantas ideas, y una que nos gustó mucho fue la imagen del Lince Ibérico ([_Lynx Pardinus_](https://es.wikipedia.org/wiki/Lynx_pardinus)) como representante. Así, de manera minimalista, quedó nuestro logo:
 
-![cla-logo-con-letras](assets/images/cla-logo-con-letras.svg)
-![osc-logo-con-letras](assets/images/osc-logo-con-letras.svg)
-
-![logo-claro](assets/images/logo-claro.png)
-![logo-oscuro](assets/images/logo-oscuro.png)
-
-Otro logo que estuvimos debatiendo fue el siguiente, pero lo descartamos porque los anteriores eran más fáciles de manejar y más simples. Aún así, nos gustó, así que lo añadimos a la memoria:
-
 ![logo-fondo-osc](assets/images/logo-fondo-osc.png)
+
+Y aquí el logo sin fondo:
+
+![logo-sin-fondo](assets/images/logo-sin-fondo.png)
+
+### Variaciones del logo
+
+Para otro material promocional de campaña, también usaremos una versión simplificada de nuestro logo:
+
+![logo-oscuro-simple](assets/images/logo-oscuro.png)
+
+![logo-claro-simple](assets/images/logo-claro.png)
+
+---
+
+## Personal del partido - Secretaria general y portavoces
+
+> [!NOTE] Generamos las personas representantes de nuestro partido mediante IA.
+
+Para diferenciarnos del resto en cuanto a máximos representantes del partido, decidimos que la secretaria general de nuestro partido fuese una mujer. Su nombre es **Beatriz Alarcón**.
+
+![retrato-perfil-1](assets/images/Fotos/retrato-perfil-1.png)
+![retrato-completo-1](assets/images/Fotos/retrato-perfil-completo-1.png)
+
+El subsecretario será **Salvador Monfort**:
+
+![retrato-subsecretario](assets/images/Fotos/subsecretario.png)
+
+La foto del equipo principal completo quedaría así:
+
+![equipo-principal](assets/images/Fotos/equipo.png)
