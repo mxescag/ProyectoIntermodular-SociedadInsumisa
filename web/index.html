@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0A284F">
+    <meta name="description" content="Sociedad Insumisa: di sí al cambio, a la libertad y a decidir tu propio camino.">
+    <link rel="icon" href="../images/logo-sin-fondo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
+    <title>Sociedad Insumisa</title>
+</head>
+<body>
+    <header class="site-header" id="inicio">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="brand" href="index.html"><img src="../images/logo-sin-fondo.png" alt="Sociedad Insumisa"></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="programa.html">Programa electoral</a>
+                <a href="partido.html">El partido</a>
+                <a href="candidatura.html">Candidatos y equipo</a>
+                <a href="agenda.html">Actualidad</a>
+                <a href="participa.html">Participa</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Sociedad Insumisa · Una nueva etapa</p>
+                <h1 id="home-title">DÍ SÍ <span>AL CAMBIO</span></h1>
+                <p class="hero-description">A la libertad, a decidir por ti y a abrir nuevas opciones. Es el momento de cambiar las reglas.</p>
+                <div class="hero-actions">
+                    <a class="hero-button" href="programa.html">Descubre nuestras propuestas <span aria-hidden="true">→</span></a>
+                    <a class="hero-link" href="participa.html">Participa</a>
+                </div>
+            </div>
+            <img class="hero-art" src="../images/Fotos/mitin.png" alt="Mitin de Sociedad Insumisa">
+        </section>
+
+        <section class="section team" id="equipo">
+            <h2>Candidatura y equipo</h2>
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="team-image candidate-image">
+                        <img src="../images/Fotos/perfil-atril-1.png" alt="Candidata de Sociedad Insumisa en un atril">
+                    </div>
+                    <h3>Candidato/a principal</h3>
+                    <p>La voz de una sociedad que quiere decidir su futuro.</p>
+                </article>
+                <article class="team-card">
+                    <div class="team-image group-image">
+                        <img src="../images/Fotos/equipo.png" alt="Equipo de Sociedad Insumisa">
+                    </div>
+                    <h3>Equipo del partido</h3>
+                    <p>Personas comprometidas con una forma distinta de hacer política.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="carousel" aria-label="Noticias del partido">
+            <div class="slides">
+                <article class="slide active">
+                    <img class="slide-image" src="images/noticia-economia.svg" alt="Ilustración de edificios y una línea ascendente">
+                    <div class="slide-content">
+                        <p>Noticia · Economía</p>
+                        <h1>Menos trabas,<br>más oportunidades</h1>
+                        <p class="slide-description">Sociedad Insumisa propone simplificar la administración y dar más espacio a la iniciativa individual.</p>
+                        <a href="noticia-economia.html">Leer noticia <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+                <article class="slide" hidden>
+                    <img class="slide-image" src="images/noticia-libertades.svg" alt="Ilustración de una puerta abierta hacia la luz">
+                    <div class="slide-content">
+                        <p>Noticia · Libertades</p>
+                        <h1>Libertad para decidir</h1>
+                        <p class="slide-description">Defendemos las libertades civiles y la autonomía de cada persona para elegir su propio camino.</p>
+                        <a href="noticia-libertades.html">Leer noticia <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+                <article class="slide" hidden>
+                    <img class="slide-image" src="../images/Fotos/congreso.png" alt="Interior del Congreso">
+                    <div class="slide-content">
+                        <p>Noticia · Instituciones</p>
+                        <h1>Igualdad ante la ley</h1>
+                        <p class="slide-description">Proponemos instituciones independientes, separación de poderes y las mismas reglas para todos.</p>
+                        <a href="noticia-instituciones.html">Leer noticia <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+                <button class="carousel-button previous" type="button" aria-label="Noticia anterior">‹</button>
+                <button class="carousel-button next" type="button" aria-label="Noticia siguiente">›</button>
+                <div class="carousel-dots" aria-label="Elegir noticia">
+                    <button class="active" type="button" aria-label="Noticia 1"></button>
+                    <button type="button" aria-label="Noticia 2"></button>
+                    <button type="button" aria-label="Noticia 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="partido">
+            <div class="about-image"><img src="../images/cla-logo.svg" alt="Logotipo de Sociedad Insumisa"></div>
+            <div>
+                <p class="eyebrow">Quiénes somos</p>
+                <h2>Libres por decisión</h2>
+                <p>Defendemos la libertad individual, la igualdad ante la ley y una sociedad donde cada persona pueda elegir su propio camino.</p>
+                <a class="text-link" href="partido.html">Más sobre el partido <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="section agenda" id="agenda">
+            <div class="agenda-copy">
+                <p class="eyebrow">Actualidad</p>
+                <h2>Agenda</h2>
+                <p>Próximamente compartiremos aquí las noticias y los próximos encuentros.</p>
+            </div>
+            <div class="calendar">
+                <h3 id="calendar-month">Calendario</h3>
+                <div class="calendar-grid" aria-label="Calendario">
+                    <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../images/cla-logo-con-letras.svg" alt="Sociedad Insumisa">
+        <span>Di sí al cambio · Libres por decisión · <a href="contacto.html">Contacto</a></span>
+    </footer>
+
+    <script>
+        const slides = [...document.querySelectorAll(".slide")];
+        const dots = [...document.querySelectorAll(".carousel-dots button")];
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            currentSlide = (index + slides.length) % slides.length;
+            slides.forEach((slide, position) => {
+                slide.hidden = position !== currentSlide;
+                dots[position].classList.toggle("active", position === currentSlide);
+            });
+        }
+
+        document.querySelector(".previous").addEventListener("click", () => showSlide(currentSlide - 1));
+        document.querySelector(".next").addEventListener("click", () => showSlide(currentSlide + 1));
+        dots.forEach((dot, index) => dot.addEventListener("click", () => showSlide(index)));
+
+        window.setInterval(() => showSlide(currentSlide + 1), 5000);
+
+        const calendarGrid = document.querySelector(".calendar-grid");
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = today.getMonth();
+        const monthNames = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+        document.querySelector("#calendar-month").textContent = `${monthNames[month]} ${year}`;
+        const firstWeekday = (new Date(year, month, 1).getDay() + 6) % 7;
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        for (let blank = 0; blank < firstWeekday; blank += 1) {
+            const cell = document.createElement("span");
+            calendarGrid.append(cell);
+        }
+        for (let day = 1; day <= daysInMonth; day += 1) {
+            const cell = document.createElement("span");
+            cell.textContent = String(day);
+            if (day === today.getDate()) cell.className = "today";
+            calendarGrid.append(cell);
+        }
+    </script>
+</body>
+</html>
